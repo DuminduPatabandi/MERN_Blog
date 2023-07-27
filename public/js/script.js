@@ -14,5 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    searchClose.addEventListener('click', function() {
+        searchBar.style.visibility = 'hidden';
+        searchBar.classList.remove('open');
+        this.setAttribute('area-expanded', 'false');
+    })
+
 }) ;
 
